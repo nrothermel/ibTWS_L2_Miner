@@ -24,4 +24,5 @@ mysql> USE gbl_level2;
 mysql> CREATE TABLE test (id INT(11), Time DATETIME(6), Price DOUBLE, Size INT(11), Bookposition INT(11), Side CHAR(3), LastVolume INT(11), LastPrice DOUBLE);
 ```
 There is no check if there is existing data in a table, so its advisable to define a new table for each run when the tool is 
-used prodictively.
+used prodictively. The contract under observation can be adjusted in main.cpp and is currently set to the 10 year german 
+treasury bond at Euwax.

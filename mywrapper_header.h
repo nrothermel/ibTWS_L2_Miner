@@ -45,7 +45,7 @@ int makesqlstatement(int entryID, std::string time, int lastvolume, double lastp
     sql::PreparedStatement *pstmt;
 
     stmt = con->createStatement();
-    stmt->execute("USE gbl_level22");// Name of the Database
+    stmt->execute("USE gbl_level2");// Name of the Database
     if(lastvolume == -1){
         pstmt = con->prepareStatement("INSERT INTO test(Time, LastPrice, id) VALUES (?, ?, ?)");//change "test" to the name of your table name
         pstmt->setDateTime(1, time);
@@ -71,7 +71,7 @@ int makesqlstatement_DOM(int entryID, std::string time, int bookposition, std::s
     sql::Statement *stmt;
     sql::PreparedStatement *pstmt;
     stmt = con->createStatement();
-    stmt->execute("USE gbl_level22");
+    stmt->execute("USE gbl_level2");
 
     pstmt = con->prepareStatement("INSERT INTO test(Time, Bookposition, Side, Price, Size, id) VALUES (?, ?, ?, ?, ?, ?)");
     pstmt->setDateTime(1, time);

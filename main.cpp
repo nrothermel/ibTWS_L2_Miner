@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   main.cpp
  * Author: Niels Rothermel
@@ -31,7 +25,7 @@ int main(int argc, char** argv) {
     driver = get_driver_instance();
     
     try{
-        con = driver->connect("tcp://127.0.0.1:3306","####","####");//MySQL username and password
+        con = driver->connect("tcp://127.0.0.1:3306","root","rothermel1");//MySQL username and password
     }
     catch(...){
         std::cout << "Exception: Couldnt' connect to MySQL server. Check if it is running" << std::endl;

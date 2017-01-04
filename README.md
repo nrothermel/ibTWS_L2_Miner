@@ -17,4 +17,11 @@ Prerequisites
 Setup
 ----------------------------
 At present the database and table names as well as well as the MySQL username and password are harcoded, so they have to be 
-adjusted in the source code.
+adjusted in the source code. To run the standard scenario it is easiest to set up the database as following
+```
+mysql> CREATE DATABASE gbl_level2;
+mysql> USE gbl_level2;
+mysql> CREATE TABLE test (id INT(11), Time DATETIME(6), Price DOUBLE, Size INT(11), Bookposition INT(11), Side CHAR(3), LastVolume INT(11), LastPrice DOUBLE);
+```
+There is no check if there is existing data in a table, so its advisable to define a new table for each run when the tool is 
+used prodictively.

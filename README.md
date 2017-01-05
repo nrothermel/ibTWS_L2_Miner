@@ -25,4 +25,6 @@ mysql> CREATE TABLE test (id INT(11), Time DATETIME(6), Price DOUBLE, Size INT(1
 ```
 There is no check if there is existing data in a table, so its advisable to define a new table for each run when the tool is 
 used prodictively. The contract under observation can be adjusted in main.cpp and is currently set to the 10 year german 
-treasury bond at Euwax.
+treasury bond at Eurex.
+
+I you look for something to visualize the data and play around with it, please follow my other project: https://github.com/nrothermel/DOMA
